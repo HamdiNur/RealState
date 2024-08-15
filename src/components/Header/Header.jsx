@@ -1,21 +1,25 @@
 import React from 'react';
+import './Header.css'
 
 const Header = () => {
-  return (
-     <section className="h-wrapper">
-        <div className="h-container">
-            <img src="./logo.png" alt="" width={100} />
+    return (
+        <section className="h-wrapper">
+            <div className="flexCenter paddings innerWidth h-container">
+                <img src="./logo.png" alt="" width={100} />
 
-            <div className="h-menu">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+                <div className= " flexCenter h-menu">
+                    <a href=""> Residences</a>
+                    <a href="">Our Value</a>
+                    <a href="">Contact Us</a>
+                    <a href=""> Get Started</a>
+                    <button className='button'>
+                    <a href="">Contact</a>
+                    </button>
+                  
+                </div>
             </div>
-        </div>
-     </section>
-  );
+        </section>
+    );
 }
 
 export default Header;
