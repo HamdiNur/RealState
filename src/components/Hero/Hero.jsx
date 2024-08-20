@@ -1,10 +1,24 @@
 import React from 'react';
+import "./Hero.css"
 
 const Hero = () => {
   return (
-    <div>
-      welcome hamdi!
+   <section className="hero-wrapper">
+    <div className="paddings innerWidth  flexCenter hero-container ">
+
+      <div className="hero-left">Left Section
+
+      </div>
+      {/* Right Side */}
+      <div className=" flexCenter hero-right">
+
+      <div className="image-container">
+        <img src="./hero-image.png" alt="" />
+      </div>
+      </div>
+
     </div>
+   </section>
   );
 }
 
