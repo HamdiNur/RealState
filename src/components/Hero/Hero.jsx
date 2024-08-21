@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Hero.css"
+import {HiLocationMarker} from 'react-icons/hi'
 
 const Hero = () => {
   return (
@@ -22,7 +23,8 @@ const Hero = () => {
 
           <span>Forget all difficulties in finding a residence for you</span>
       </div>
-      <div className="search-bar">Search
+      <div className="search-bar">
+        <HiLocationMarker color="var(--blue)" size={25} />
 
       </div>
 
