@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import {
     Accordion,
@@ -41,13 +41,21 @@ const Value = () => {
             >
                 {
                    data.map((item,index)=>{
+                    const[className,setClassName]=useState(null)
                     return(
                         <AccordionItem
-                         className='accordionItem' key={index} uuid={index}
+                         className={`accordionItem ${className}`}
+                         key={index} uuid={index}
                         >
 
                              <AccordionItemHeading>
-                                <AccordionItemButton>
+                                <AccordionItemButton className='flexCenter accordionButton'>
+                                   
+                                   <AccordionItemState>
+                                    {({expended})=>expended 
+                                    ?setClassName("expended")
+                                    :setClassName("collapsed")}
+                                   </AccordionItemState>
                                     <div className="flexCenter icon">{item.icon}</div>
                                      <span className="primaryText">
                                         {item.heading}
