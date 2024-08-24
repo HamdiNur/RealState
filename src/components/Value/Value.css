@@ -24,10 +24,13 @@
     overflow: hidden;
     margin-bottom: 20px;
 }
-.accordionItem.expended{
-    box-shadow: black;
+/* this line of code is not working */
+.accordionItem.expended  {
+   box-shadow: blueviolet;
     border-radius: 6px;
-}
+  }
+
+  /* Why are are you not working  */
 .accordionButton{
     background: white;
     padding: 1rem;
@@ -37,7 +40,7 @@
 
 
 }
-.icon{
+.icon {
     padding: 10px;
     background: #eeeeff;
     border-radius: 5px;
