@@ -40,12 +40,13 @@ const Value = () => {
                preExpanded={[0]}
             >
                 {
-                   data.map((item,index)=>{
+                   data.map((item,i)=>{
                     const[className,setClassName]=useState(null)
                     return(
                         <AccordionItem
+                        
                          className={`accordionItem ${className}`}
-                         key={index} uuid={index}
+                         key={i} uuid={i}
                         >
 
                              <AccordionItemHeading>
